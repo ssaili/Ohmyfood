@@ -25,7 +25,13 @@ main {
     flex-direction: column;
 }
 
-h1, h2 {
+h1 {
+    padding: 0px 13.5px;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+h2 {
     font-weight: 700;
     font-size: 1.5rem;
 }
@@ -104,6 +110,7 @@ header img {
     border: none;
     border-radius: 25px;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     color: #FFFFFF;
     font-weight: 500;
 }
@@ -181,6 +188,7 @@ header img {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     margin-top: 20px;
+    position: relative;
 }
 
 .restaurant-card img {
@@ -219,6 +227,27 @@ header img {
 .card-content p {
     font-size: 1.0625rem;
     font-weight: 300;
+}
+
+.fa-heart {
+    position: absolute;
+    right: 25px;
+    bottom: 33px;
+}
+
+
+.full {
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.full:hover {
+    opacity: 1;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(#9356DC, #FF79DA);
 }
 
 /****** footer ***********/
@@ -347,6 +376,26 @@ header img {
     font-size: 0.9375rem;
 }
 
+.green-label {
+    display: none;
+    position: absolute;
+    right: 0;
+    height: 69px;
+    width: 59px;
+    background-color: #99E2D0;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.fa-circle-check {
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+    font-size: x-large;
+    color: #FFFFFF;
+}
+
+
+
 .menu-button {
     display: flex;
     justify-content: center;
@@ -361,6 +410,65 @@ header img {
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     color: #FFFFFF;
     font-weight: 500;
+}
+
+button:hover {
+    opacity: 0.8;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.progress-bar {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    width: 50%;
+    height: 20px;
+    animation-name: barre;
+    animation-duration: 3s;
+    transform-origin: 0%;
+}
+
+@keyframes barre {
+    0% { transform: scaleX(0);opacity: 1;background: #9356DC;}
+    99.99% { opacity: 1;}
+    100% { transform: scaleX(1); opacity: 0;background: #FF79DA;}
+}
+
+
+
+.main-container{
+    animation-name: affichage;
+    animation-duration: 3s;
+}
+
+@keyframes affichage {
+    0% { opacity: 0; }
+    99.99% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.entrees {
+    animation-name: decalage;
+    animation-duration: 1500ms;
+    animation-fill-mode: both;
+    animation-delay: 3000ms;
+}
+.plats {
+    animation-name: decalage;
+    animation-duration: 1500ms;
+    animation-fill-mode: both;
+    animation-delay: 3500ms;
+}
+.desserts {
+    animation-name: decalage;
+    animation-duration: 1500ms;
+    animation-fill-mode: both;
+    animation-delay: 3750ms;
+}
+
+@keyframes decalage {
+    0% { transform: translateX(-200%);}
+    100% { transform: translateX(0px);}
 }
 
 
