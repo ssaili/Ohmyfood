@@ -1,0 +1,31 @@
+.searchform {
+    &__section1 {
+        height: 50px;
+        background-color: #EAEAEA;
+        gap: 15px;
+        @include justify-center;
+        align-items: center;
+    }
+    &__area {
+        max-width: 110px;
+        border: none;
+        background-color:#EAEAEA;
+        text-align: center;
+        font-weight:500;
+    }
+    &__section2 {
+        @include justify-center;
+        flex-direction: column;
+        background-color:#F6F6F6;
+        padding: 30px 30px;
+        gap: 30px;
+        text-align: center;
+    }
+    &__title {
+        padding-bottom: 10px;
+        padding-inline: 40px;
+    }
+    &__button {
+        width: 218px;
+    }
+}

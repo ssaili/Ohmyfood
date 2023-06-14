@@ -1,0 +1,36 @@
+.steps {
+    @include justify-center;
+    flex-direction: column;
+    padding: 50px 20px;
+    background-color:#FFFFFF;
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__card {
+        display: flex;
+        align-items: center;
+        width: 322.49px;
+        height: 72.38px;
+        background: #F7F7F7;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        margin-top: 25px;
+        gap: 25px;
+    }
+    &__circle {
+        width: 24px;
+        height: 24px;
+        @include justify-center;
+        align-items: center;
+        border-radius: 50%;
+        position: relative;
+        right: 10px;
+        background: $primary-color;
+        color: #F6F6F6;
+    }
+    &__storeicon {
+        color: $primary-color;
+    }
+}
