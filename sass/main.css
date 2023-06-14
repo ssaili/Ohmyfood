@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul {
@@ -12,6 +14,10 @@ ul {
   font-family: 'Roboto', sans-serif;
 }
 
+.menu__title {
+  font-family: 'Shrikhand', cursive;
+}
+
 * {
   font-size: 16px;
 }
@@ -19,6 +25,10 @@ ul {
 a {
   text-decoration: none;
   color: #000000;
+}
+
+.searchform__area {
+  font-weight: 500;
 }
 
 .searchform__title {
@@ -36,12 +46,26 @@ button {
   font-weight: 500;
 }
 
-h2 {
+.steps__title, .restaurants__title {
   font-weight: 700;
   font-size: 1.5rem;
 }
 
+.steps__circle {
+  color: #F6F6F6;
+}
+
+.steps__storeicon {
+  color: #9356DC;
+}
+
 .steps__subtitle {
+  font-weight: 500;
+}
+
+.restaurants__newtag {
+  color: #008766;
+  font-size: 0.825rem;
   font-weight: 500;
 }
 
@@ -55,8 +79,48 @@ h2 {
   font-weight: 300;
 }
 
-.footer__list {
+.menu__title {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.75rem;
+}
+
+.menu__subtitle {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.menu__dishtitle {
   font-weight: 500;
+  font-size: 1.125rem;
+  color: #000000;
+}
+
+.menu__dishsubtitle {
+  font-weight: 300;
+  font-size: 0.9375rem;
+  color: #000000;
+}
+
+.menu__price {
+  font-weight: 700;
+  font-size: 0.9375rem;
+  color: #000000;
+}
+
+.menu__button {
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.footer__iconlink {
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.footer__link {
+  font-weight: 400;
+  color: #FFFFFF;
 }
 
 .header {
@@ -72,6 +136,12 @@ h2 {
 .header__logo {
   width: 162px;
   height: 44px;
+}
+
+.header__arrow {
+  position: absolute;
+  left: 23px;
+  top: 24px;
 }
 
 .searchform__section1 {
@@ -94,7 +164,6 @@ h2 {
   border: none;
   background-color: #EAEAEA;
   text-align: center;
-  font-weight: 500;
 }
 
 .searchform__section2 {
@@ -184,11 +253,6 @@ h2 {
   position: relative;
   right: 10px;
   background: #9356DC;
-  color: #F6F6F6;
-}
-
-.steps__storeicon {
-  color: #9356DC;
 }
 
 .restaurants {
@@ -249,7 +313,6 @@ h2 {
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   background: #99E2D0;
-  color: #008766;
 }
 
 .restaurants__cardcontent {
@@ -261,6 +324,7 @@ h2 {
   position: absolute;
   right: 25px;
   bottom: 33px;
+  font-size: larger;
 }
 
 .footer {
@@ -287,12 +351,99 @@ h2 {
   margin-top: 7px;
 }
 
-.footer__icon {
+.footer__ustensilsicon {
   margin-right: 10px;
 }
 
-.footer__link {
-  color: #FFFFFF;
+.footer__handshakeicon {
+  margin-right: 4px;
+}
+
+.menu {
+  background-color: #F6F6F6;
+}
+
+.menu__card {
+  padding: 35px 10px;
+}
+
+.menu__picture {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu__section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+
+.menu__emptyheart {
+  position: relative;
+  left: 44px;
+}
+
+.menu__emptyheart, .menu__fullheart {
+  font-size: larger;
+}
+
+.menu__subtitle {
+  margin-top: 40px;
+}
+
+.menu__line {
+  width: 40px;
+  margin-top: 8px;
+  border: 2px solid #99E2D0;
+}
+
+.menu__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 15px;
+  margin-top: 12px;
+  height: 69px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 15.0431px;
+}
+
+.menu__dishdescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__buttonsection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu__button {
+  margin-top: 40px;
+  width: 186px;
 }
 
 button {
