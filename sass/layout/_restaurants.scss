@@ -1,7 +1,7 @@
 .restaurants {
     @include justify-center;
     flex-direction: column;
-    padding: 30px 20px;
+    padding: 60px 20px;
     background-color:#F6F6F6;
     &__link {
         height: 251px;
@@ -43,11 +43,6 @@
         right: 25px;
         bottom: 33px;
 
-    }
-    &__fullheart {
-        opacity: 0;
-        transition-property: all;
-        transition-duration: 1s;
     }
     
     

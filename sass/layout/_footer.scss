@@ -1,0 +1,21 @@
+.footer {
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    color: #FFFFFF;
+    &__img {
+        width: 138px;
+        height: 27px;
+        filter: invert(99%) sepia(99%) saturate(0%) hue-rotate(101deg) brightness(112%) contrast(101%);
+    }
+    &__list {
+        margin-top: 7px;
+    }
+    &__icon {
+        margin-right: 10px;
+    }
+    &__link {
+        color: #FFFFFF;
+    }
+}
