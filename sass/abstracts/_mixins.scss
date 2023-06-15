@@ -3,3 +3,6 @@
     justify-content: center;
 }
 
+@mixin lighter-background {
+    background: linear-gradient(193.33deg, lighten($primary-color, 8%) -11.44%, lighten($secondary-color, 8%) 123.93%);
+}
