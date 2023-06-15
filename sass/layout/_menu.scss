@@ -1,7 +1,13 @@
 .menu {
-    background-color: #F6F6F6;
+    background-color: #F7F7F7;
     &__card {
-        padding: 35px 10px;
+        width: 100%;
+        border-radius: 40px 40px 0px 0px;
+        padding-top: 35px;
+        padding-inline: 10px;
+        position: relative;
+        bottom: 50px;
+        background-color: #F7F7F7;
     }
     &__picture {
         width: 100%;
@@ -11,13 +17,13 @@
     &__section1 {
         display: flex;
         align-items: center;
-        gap: 25px;
     }
-    &__emptyheart {
+    &__heart {
         position: relative;
-        left: 44px;
     }
     &__emptyheart, &__fullheart {
+        position: absolute;
+        right: 41px;
         font-size: larger;
     }
     &__subtitle {
