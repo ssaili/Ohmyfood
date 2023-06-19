@@ -4,13 +4,11 @@
     padding: 50px 20px;
     background-color:#FFFFFF;
     &__cards {
-        display: flex;
+        @include align-center;
         flex-direction: column;
-        align-items: center;
     }
     &__card {
-        display: flex;
-        align-items: center;
+        @include align-center;
         width: 322.49px;
         height: 72.38px;
         background: #F7F7F7;

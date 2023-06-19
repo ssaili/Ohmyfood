@@ -3,6 +3,18 @@
     justify-content: center;
 }
 
+@mixin align-center {
+    display: flex;
+    align-items: center;
+}
+
 @mixin lighter-background {
     background: linear-gradient(193.33deg, lighten($primary-color, 8%) -11.44%, lighten($secondary-color, 8%) 123.93%);
+}
+
+@mixin full-heart {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient($primary-color, $secondary-color);
 }

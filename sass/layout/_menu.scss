@@ -15,16 +15,30 @@
         object-fit: cover;
     }
     &__section1 {
-        display: flex;
-        align-items: center;
+        @include align-center;
+        justify-content: space-between;
     }
-    &__heart {
+    &__favorite {
         position: relative;
+        @include align-center;
     }
     &__emptyheart, &__fullheart {
         position: absolute;
         right: 41px;
-        font-size: larger;
+        font-size: x-large;
+    }
+    &__fullheart {
+        @include full-heart;
+        opacity: 0;
+    }
+    &__favorite input[type="checkbox"] {
+        display: none;
+    }
+    &__favorite input[type="checkbox"]:checked ~ &__fullheart {
+        opacity: 1;
+    }
+    &__favorite input[type="checkbox"]:checked ~ &__emptyheart {
+        opacity: 0;
     }
     &__subtitle {
         margin-top: 40px;

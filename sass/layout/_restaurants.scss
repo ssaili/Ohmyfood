@@ -43,6 +43,17 @@
         bottom: 33px;
         font-size: larger;
     }
-    
-    
+    &__fullheart {
+        @include full-heart;
+        opacity: 0;
+    }
+    &__favorite input[type="checkbox"] {
+        display: none;
+    }
+    &__favorite input[type="checkbox"]:checked ~ &__fullheart {
+        opacity: 1;
+    }
+    &__favorite input[type="checkbox"]:checked ~ &__emptyheart {
+        opacity: 0;
+    } 
 }
