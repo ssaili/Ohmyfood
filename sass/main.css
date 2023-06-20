@@ -122,6 +122,11 @@ button {
   color: #FFFFFF;
 }
 
+.loader__description {
+  font-weight: bold;
+  font-size: 30px;
+}
+
 /* menu animation */
 .menu__favorite input[type=checkbox]:checked ~ .menu__fullheart {
   transition: opacity 1s;
@@ -129,7 +134,32 @@ button {
 .menu__favorite input[type=checkbox]:checked ~ .menu__emptyheart {
   transition: opacity 0.8s;
 }
+.menu__starters {
+  animation-name: lag;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+.menu__dishes {
+  animation-name: lag;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
+}
+.menu__desserts {
+  animation-name: lag;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
 
+@keyframes lag {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 /* restaurants animation */
 .restaurants__favorite input[type=checkbox]:checked ~ .restaurants__fullheart {
   transition: opacity 1s;
@@ -252,10 +282,6 @@ button {
   height: 80px;
   opacity: 0;
 }
-.loader__description {
-  font-weight: bold;
-  font-size: 30px;
-}
 
 .header {
   padding: 15px 0px;
@@ -345,6 +371,9 @@ button {
   padding: 60px 20px;
   background-color: #F6F6F6;
 }
+.restaurants__cards > * {
+  position: relative;
+}
 .restaurants__link {
   height: 251px;
 }
@@ -379,13 +408,12 @@ button {
 }
 .restaurants__cardcontent {
   padding: 10px;
-  position: relative;
 }
 .restaurants__emptyheart, .restaurants__fullheart {
   position: absolute;
   right: 25px;
-  bottom: 33px;
-  font-size: larger;
+  bottom: 30px;
+  font-size: x-large;
 }
 .restaurants__fullheart {
   color: transparent;

@@ -3,6 +3,9 @@
     flex-direction: column;
     padding: 60px 20px;
     background-color:#F6F6F6;
+    &__cards>* {
+        position: relative;
+    }
     &__link {
         height: 251px;
     }
@@ -35,13 +38,12 @@
     }
     &__cardcontent {
         padding: 10px;
-        position: relative;
     }
     &__emptyheart, &__fullheart {
         position: absolute;
         right: 25px;
-        bottom: 33px;
-        font-size: larger;
+        bottom: 30px;
+        font-size: x-large;
     }
     &__fullheart {
         @include full-heart;

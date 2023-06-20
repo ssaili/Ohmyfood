@@ -6,6 +6,21 @@
     &__favorite input[type="checkbox"]:checked ~ &__emptyheart {
         transition: opacity .8s;
     }
+    &__starters {
+        @include dish-lag;
+    }
+    &__dishes {
+        @include dish-lag;
+        animation-delay: 0.5s;
+    }
+    &__desserts {
+        @include dish-lag;
+        animation-delay: 1s;
+    }
+}
+@keyframes lag {
+    0% { transform: translateX(-200%);}
+    100% { transform: translateX(0px);}
 }
 /* restaurants animation */
 .restaurants {
