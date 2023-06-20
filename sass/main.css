@@ -122,6 +122,7 @@ button {
   color: #FFFFFF;
 }
 
+/* menu animation */
 .menu__favorite input[type=checkbox]:checked ~ .menu__fullheart {
   transition: opacity 1s;
 }
@@ -129,11 +130,131 @@ button {
   transition: opacity 0.8s;
 }
 
+/* restaurants animation */
 .restaurants__favorite input[type=checkbox]:checked ~ .restaurants__fullheart {
   transition: opacity 1s;
 }
 .restaurants__favorite input[type=checkbox]:checked ~ .restaurants__emptyheart {
   transition: opacity 0.8s;
+}
+
+/* container animation */
+.container {
+  animation: containerdisplay 3s;
+}
+
+@keyframes containerdisplay {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* loader animation */
+.loader {
+  animation: loaderdisplay 3s;
+}
+
+@keyframes loaderdisplay {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* loader bar animation */
+.loader__bar {
+  animation: beat 1.5s infinite;
+}
+
+.loader__bar:nth-child(1) {
+  background-color: #f476da;
+  animation-delay: 0.1s;
+}
+
+.loader__bar:nth-child(2) {
+  background-color: #e972da;
+  animation-delay: 0.2s;
+}
+
+.loader__bar:nth-child(3) {
+  background-color: #df6fdb;
+  animation-delay: 0.3s;
+}
+
+.loader__bar:nth-child(4) {
+  background-color: #d46bdb;
+  animation-delay: 0.4s;
+}
+
+.loader__bar:nth-child(5) {
+  background-color: #c968db;
+  animation-delay: 0.5s;
+}
+
+.loader__bar:nth-child(6) {
+  background-color: #be64db;
+  animation-delay: 0.6s;
+}
+
+.loader__bar:nth-child(7) {
+  background-color: #b361db;
+  animation-delay: 0.7s;
+}
+
+.loader__bar:nth-child(8) {
+  background-color: #a95ddc;
+  animation-delay: 0.8s;
+}
+
+.loader__bar:nth-child(9) {
+  background-color: #9e5adc;
+  animation-delay: 0.9s;
+}
+
+.loader__bar:nth-child(10) {
+  background-color: #9356dc;
+  animation-delay: 1s;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.25);
+    opacity: 0;
+  }
+}
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.loader__barcontainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.loader__bar {
+  width: 10px;
+  height: 80px;
+  opacity: 0;
+}
+.loader__description {
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .header {

@@ -1,3 +1,4 @@
+/* menu animation */
 .menu {
     &__favorite input[type="checkbox"]:checked ~ &__fullheart {
         transition: opacity 1s;
@@ -6,6 +7,7 @@
         transition: opacity .8s;
     }
 }
+/* restaurants animation */
 .restaurants {
     &__favorite input[type="checkbox"]:checked ~ &__fullheart {
         transition: opacity 1s;
@@ -14,3 +16,42 @@
         transition: opacity .8s;
     }
 }
+/* container animation */
+.container {
+    animation: containerdisplay 3s ;
+}
+@keyframes containerdisplay {
+    0% { opacity: 0; }
+    99% { opacity: 0; }
+    100% { opacity: 1; }
+}
+/* loader animation */
+.loader {
+    animation: loaderdisplay 3s ;
+}
+@keyframes loaderdisplay {
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+/* loader bar animation */
+.loader__bar {
+    animation: beat 1.5s infinite;
+}
+@for $i from 1 through 10 {
+    .loader__bar:nth-child(#{$i}) {
+      background-color: mix($primary-color, $secondary-color, $i*10%);
+      animation-delay: $i*0.1s;
+    }
+  }
+@keyframes beat {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  
+    50% {
+      transform: scale(0.25);
+      opacity: 0;
+    }
+  }
