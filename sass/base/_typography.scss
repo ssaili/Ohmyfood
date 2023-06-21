@@ -1,108 +1,105 @@
 * {
     font-size: 16px;
 }
-
+/* anchor typography */
 a {
     text-decoration: none;
     color: #000000;
 }
-
-.searchform__area {
-    font-weight: 500;
+/* searchform typography */
+.searchform {
+    &__area {
+        font-weight: 500;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    &__subtitle {
+        font-weight: 300;
+        font-size: 1.125rem;
+    }
 }
-
-.searchform__title {
-    font-weight: 700;
-    font-size: 1.5rem;
-}
-
-.searchform__subtitle {
-    font-weight: 300;
-    font-size: 1.125rem;
-}
-
-button {
+/* button typography */
+.btn {
     color: #FFFFFF;
     font-weight: 500;
 }
-
-.steps__title, .restaurants__title {
-    font-weight: 700;
-    font-size: 1.5rem;
+/* steps typography */
+.steps {
+    &__title, &__title {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    &__circle {
+        color: #F6F6F6;
+    }
+    &__storeicon {
+        color: $primary-color;
+    }
+    &__subtitle {
+        font-weight: 500;
+    }
 }
-
-.steps__circle {
-    color: #F6F6F6;
+/* restaurants typography */
+.restaurants {
+    &__newtag {
+        color: #008766;
+        font-size: 0.825rem;
+        font-weight: 500;
+    }
+    &__cardtitle {
+        font-weight: 700;
+        font-size: 1.125rem;
+    }
+    &__cardsubtitle {
+        font-size: 1.0625rem;
+        font-weight: 300;
+    }
 }
-
-.steps__storeicon {
-    color: $primary-color;
+/* menu typography */
+.menu {
+    &__title {
+        font-weight: 400;
+        font-style: italic;
+        font-size: 1.75rem;
+    }
+    &__subtitle {
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    &__dishtitle {
+        font-weight: 500;
+        font-size: 1.125rem;
+        color: #000000;
+    }
+    &__dishsubtitle {
+        font-weight: 300;
+        font-size: 0.9375rem;
+        color: #000000;
+    }
+    &__price {
+        font-weight: 700;
+        font-size: 0.9375rem;
+        color: #000000;
+    }
+    &__tick {
+        color: #FFFFFF;
+        font-size: x-large;
+    }
 }
-
-.steps__subtitle {
-    font-weight: 500;
+/* footer typography */
+.footer {
+    &__iconlink {
+        font-weight: 500;
+        color: #FFFFFF;
+    }
+    &__link {
+        font-weight: 400;
+        color: #FFFFFF;
+    }
 }
-
-.restaurants__newtag {
-    color: #008766;
-    font-size: 0.825rem;
-    font-weight: 500;
-}
-
-.restaurants__cardtitle {
-    font-weight: 700;
-    font-size: 1.125rem;
-}
-
-.restaurants__cardsubtitle {
-    font-size: 1.0625rem;
-    font-weight: 300;
-}
-
-.menu__title {
-    font-weight: 400;
-    font-style: italic;
-    font-size: 1.75rem;
-}
-
-.menu__subtitle {
-    font-weight: 300;
-    text-transform: uppercase;
-}
-
-.menu__dishtitle {
-    font-weight: 500;
-    font-size: 1.125rem;
-    color: #000000;
-}
-
-.menu__dishsubtitle {
-    font-weight: 300;
-    font-size: 0.9375rem;
-    color: #000000;
-}
-
-.menu__price {
-    font-weight: 700;
-    font-size: 0.9375rem;
-    color: #000000;
-}
-
-.menu__button {
-    color: #FFFFFF;
-    font-weight: 500;
-}
-
-.footer__iconlink {
-    font-weight: 500;
-    color: #FFFFFF;
-}
-
-.footer__link {
-    font-weight: 400;
-    color: #FFFFFF;
-}
-
+/* loader typography */
 .loader__description {
     font-weight: bold;
     font-size: 30px;

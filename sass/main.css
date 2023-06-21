@@ -21,107 +21,102 @@ ul {
   font-size: 16px;
 }
 
+/* anchor typography */
 a {
   text-decoration: none;
   color: #000000;
 }
 
+/* searchform typography */
 .searchform__area {
   font-weight: 500;
 }
-
 .searchform__title {
   font-weight: 700;
   font-size: 1.5rem;
 }
-
 .searchform__subtitle {
   font-weight: 300;
   font-size: 1.125rem;
 }
 
-button {
+/* button typography */
+.btn {
   color: #FFFFFF;
   font-weight: 500;
 }
 
-.steps__title, .restaurants__title {
+/* steps typography */
+.steps__title, .steps__title {
   font-weight: 700;
   font-size: 1.5rem;
 }
-
 .steps__circle {
   color: #F6F6F6;
 }
-
 .steps__storeicon {
   color: #9356DC;
 }
-
 .steps__subtitle {
   font-weight: 500;
 }
 
+/* restaurants typography */
 .restaurants__newtag {
   color: #008766;
   font-size: 0.825rem;
   font-weight: 500;
 }
-
 .restaurants__cardtitle {
   font-weight: 700;
   font-size: 1.125rem;
 }
-
 .restaurants__cardsubtitle {
   font-size: 1.0625rem;
   font-weight: 300;
 }
 
+/* menu typography */
 .menu__title {
   font-weight: 400;
   font-style: italic;
   font-size: 1.75rem;
 }
-
 .menu__subtitle {
   font-weight: 300;
   text-transform: uppercase;
 }
-
 .menu__dishtitle {
   font-weight: 500;
   font-size: 1.125rem;
   color: #000000;
 }
-
 .menu__dishsubtitle {
   font-weight: 300;
   font-size: 0.9375rem;
   color: #000000;
 }
-
 .menu__price {
   font-weight: 700;
   font-size: 0.9375rem;
   color: #000000;
 }
-
-.menu__button {
+.menu__tick {
   color: #FFFFFF;
-  font-weight: 500;
+  font-size: x-large;
 }
 
+/* footer typography */
 .footer__iconlink {
   font-weight: 500;
   color: #FFFFFF;
 }
-
 .footer__link {
   font-weight: 400;
   color: #FFFFFF;
 }
 
+/* loader typography */
 .loader__description {
   font-weight: bold;
   font-size: 30px;
@@ -325,6 +320,10 @@ button {
   padding-bottom: 10px;
   padding-inline: 40px;
 }
+.searchform__buttonsection {
+  display: flex;
+  justify-content: center;
+}
 .searchform__button {
   width: 218px;
 }
@@ -512,6 +511,7 @@ button {
   border: 2px solid #99E2D0;
 }
 .menu__link {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -526,6 +526,17 @@ button {
   display: flex;
   justify-content: space-between;
 }
+.menu__choice {
+  position: absolute;
+  right: 0;
+  width: 59px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99E2D0;
+}
 .menu__buttonsection {
   display: flex;
   justify-content: center;
@@ -535,15 +546,18 @@ button {
   width: 186px;
 }
 
-.searchform__button, .menu__button {
+.btn {
   height: 50px;
   border: none;
   border-radius: 25px;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.searchform__button:hover, .menu__button:hover {
+.btn:hover {
   background: linear-gradient(193.33deg, #a978e3 -11.44%, #ffa2e5 123.93%);
   box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.25);
 }/*# sourceMappingURL=main.css.map */

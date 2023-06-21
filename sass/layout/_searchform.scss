@@ -24,6 +24,9 @@
         padding-bottom: 10px;
         padding-inline: 40px;
     }
+    &__buttonsection {
+        @include justify-center;
+    }
     &__button {
         width: 218px;
     }
