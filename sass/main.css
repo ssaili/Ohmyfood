@@ -312,6 +312,7 @@ a {
   background-color: #F6F6F6;
   padding: 30px 30px;
   gap: 30px;
+  text-align: center;
 }
 .searchform__title {
   padding-bottom: 10px;
