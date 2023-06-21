@@ -10,15 +10,13 @@
         max-width: 110px;
         border: none;
         background-color:#EAEAEA;
-        text-align: center;
     }
     &__section2 {
-        @include justify-center;
+        display: flex;
         flex-direction: column;
         background-color:#F6F6F6;
         padding: 30px 30px;
         gap: 30px;
-        text-align: center;
     }
     &__title {
         padding-bottom: 10px;
