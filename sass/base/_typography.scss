@@ -27,7 +27,7 @@ a {
 }
 /* steps typography */
 .steps {
-    &__title, &__title {
+    &__title {
         font-weight: 700;
         font-size: 1.5rem;
     }
@@ -43,6 +43,10 @@ a {
 }
 /* restaurants typography */
 .restaurants {
+    &__title {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
     &__newtag {
         color: #008766;
         font-size: 0.825rem;

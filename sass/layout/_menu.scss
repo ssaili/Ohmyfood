@@ -24,7 +24,7 @@
     }
     &__emptyheart, &__fullheart {
         position: absolute;
-        right: 41px;
+        right: 30px;
         font-size: x-large;
     }
     &__fullheart {
@@ -49,23 +49,40 @@
         border: 2px solid #99E2D0;
     }
     &__link {
-        position: relative;
-        @include justify-center;
-        flex-direction: column;
-        padding: 0 15px;
+        overflow: hidden;
+        display: flex;
+        padding-left: 15px;
         margin-top: 12px;
         height: 69px;
         background-color: #FFFFFF;
         box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
         border-radius: 15.0431px;
     }
-    &__dishdescription {
+    &__link input[type="checkbox"] {
+        display: none;
+    }
+    &__linksection1 {
+        margin-block: auto;
+        flex-grow: 1;
+        min-width: 0;
+        width: 287px;
+        margin-right: -59px;
+    }
+     &__dishtitle, &__dishsubtitle {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+     }
+    &__linksection2 {
         display: flex;
-        justify-content: space-between;
+        transform: translateX(59px);
+    }
+    &__price {
+        padding-top: 37.5px;
+        padding-right: 15px;
     }
     &__choice {
-        position: absolute;
-        right: 0;
         width: 59px;
         height: 100%;
         @include justify-center;

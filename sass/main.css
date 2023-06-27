@@ -47,7 +47,7 @@ a {
 }
 
 /* steps typography */
-.steps__title, .steps__title {
+.steps__title {
   font-weight: 700;
   font-size: 1.5rem;
 }
@@ -62,6 +62,10 @@ a {
 }
 
 /* restaurants typography */
+.restaurants__title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
 .restaurants__newtag {
   color: #008766;
   font-size: 0.825rem;
@@ -129,22 +133,31 @@ a {
 .menu__favorite input[type=checkbox]:checked ~ .menu__emptyheart {
   transition: opacity 0.8s;
 }
-.menu__starters {
+.menu__section2 {
   animation-name: lag;
   animation-duration: 1.5s;
   animation-fill-mode: both;
 }
-.menu__dishes {
+.menu__section3 {
   animation-name: lag;
   animation-duration: 1.5s;
   animation-fill-mode: both;
   animation-delay: 0.5s;
 }
-.menu__desserts {
+.menu__section4 {
   animation-name: lag;
   animation-duration: 1.5s;
   animation-fill-mode: both;
   animation-delay: 1s;
+}
+.menu__linksection1, .menu__linksection2 {
+  transition: 0.4s;
+}
+.menu__link input[type=checkbox]:checked ~ .menu__linksection1 {
+  margin-right: 0;
+}
+.menu__link input[type=checkbox]:checked ~ .menu__linksection2 {
+  transform: translateX(0);
 }
 
 @keyframes lag {
@@ -481,7 +494,7 @@ a {
 }
 .menu__emptyheart, .menu__fullheart {
   position: absolute;
-  right: 41px;
+  right: 30px;
   font-size: x-large;
 }
 .menu__fullheart {
@@ -509,24 +522,40 @@ a {
   border: 2px solid #99E2D0;
 }
 .menu__link {
-  position: relative;
+  overflow: hidden;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 15px;
+  padding-left: 15px;
   margin-top: 12px;
   height: 69px;
   background-color: #FFFFFF;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   border-radius: 15.0431px;
 }
-.menu__dishdescription {
+.menu__link input[type=checkbox] {
+  display: none;
+}
+.menu__linksection1 {
+  margin-block: auto;
+  flex-grow: 1;
+  min-width: 0;
+  width: 287px;
+  margin-right: -59px;
+}
+.menu__dishtitle, .menu__dishsubtitle {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu__linksection2 {
   display: flex;
-  justify-content: space-between;
+  transform: translateX(59px);
+}
+.menu__price {
+  padding-top: 37.5px;
+  padding-right: 15px;
 }
 .menu__choice {
-  position: absolute;
-  right: 0;
   width: 59px;
   height: 100%;
   display: flex;

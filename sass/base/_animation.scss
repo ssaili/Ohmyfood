@@ -6,16 +6,25 @@
     &__favorite input[type="checkbox"]:checked ~ &__emptyheart {
         transition: opacity .8s;
     }
-    &__starters {
+    &__section2 {
         @include dish-lag;
     }
-    &__dishes {
+    &__section3 {
         @include dish-lag;
         animation-delay: 0.5s;
     }
-    &__desserts {
+    &__section4 {
         @include dish-lag;
         animation-delay: 1s;
+    }
+    &__linksection1, &__linksection2 {
+        transition: 0.4s;
+    }
+    &__link input[type="checkbox"]:checked ~ &__linksection1 {
+        margin-right: 0;
+    }
+    &__link input[type="checkbox"]:checked ~ &__linksection2 {
+        transform: translateX(0);
     }
 }
 @keyframes lag {
