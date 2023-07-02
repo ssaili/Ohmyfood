@@ -42,7 +42,7 @@
 }
 /* container animation */
 .container {
-    animation: containerdisplay 3s ;
+    animation: containerdisplay 1.5s ;
 }
 @keyframes containerdisplay {
     0% { opacity: 0; }
@@ -51,7 +51,7 @@
 }
 /* loader animation */
 .loader {
-    animation: loaderdisplay 3s ;
+    animation: loaderdisplay 1.5s ;
 }
 @keyframes loaderdisplay {
     0% { opacity: 1; }

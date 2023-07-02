@@ -1,11 +1,19 @@
 .steps {
+    max-width: 1024px;
     @include justify-center;
     flex-direction: column;
     padding: 50px 20px;
     background-color:#FFFFFF;
+    @media (min-width: 1024px) {
+        margin-inline: auto;
+    }
     &__cards {
-        @include align-center;
+        display: flex;
         flex-direction: column;
+        @media (min-width: 768px) {
+            flex-direction: row;
+            gap: 25px;
+        }
     }
     &__card {
         @include align-center;
@@ -16,6 +24,9 @@
         border-radius: 20px;
         margin-top: 25px;
         gap: 25px;
+        @media (min-width: 768px ) and (max-width: 880px) {
+            gap: 6px;
+        }
     }
     &__circle {
         width: 24px;

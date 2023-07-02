@@ -4,12 +4,32 @@
     flex-direction: column;
     padding: 25px;
     color: #FFFFFF;
+    @media (min-width: 768px ) and (max-width: 845px) {
+        padding-top: 40px;
+        flex-direction: row-reverse;
+        gap: 25px;
+    }
+    @media (min-width: 846px ) {
+        padding-top: 40px;
+        flex-direction: row-reverse;
+        gap: 80px;
+    }
     &__img {
         width: 138px;
         height: 27px;
         filter: invert(99%) sepia(99%) saturate(0%) hue-rotate(101deg) brightness(112%) contrast(101%);
     }
     &__list {
+        @media (min-width: 768px ) and (max-width: 845px) {
+            display: flex;
+            gap: 8px;
+        }
+        @media (min-width: 846px ) {
+            display: flex;
+            gap: 16px;
+        }
+    }
+    &__element {
         margin-top: 7px;
     }
     &__ustensilsicon {
