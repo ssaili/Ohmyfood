@@ -94,10 +94,20 @@ a {
   font-size: 1.125rem;
   color: #000000;
 }
+@media (min-width: 320px) and (max-width: 360px) {
+  .menu__dishtitle {
+    font-size: 0.98rem;
+  }
+}
 .menu__dishsubtitle {
   font-weight: 300;
   font-size: 0.9375rem;
   color: #000000;
+}
+@media (min-width: 320px) and (max-width: 360px) {
+  .menu__dishsubtitle {
+    font-size: 0.815rem;
+  }
 }
 .menu__price {
   font-weight: 700;
@@ -372,6 +382,11 @@ a {
   margin-top: 25px;
   gap: 25px;
 }
+@media (min-width: 320px) {
+  .steps__card {
+    width: 300px;
+  }
+}
 @media (min-width: 768px) and (max-width: 880px) {
   .steps__card {
     gap: 6px;
@@ -569,7 +584,7 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .menu__section1 {
     justify-content: center;
   }
@@ -584,7 +599,12 @@ a {
   right: 30px;
   font-size: x-large;
 }
-@media (min-width: 1024px) {
+@media (min-width: 320px) {
+  .menu__emptyheart, .menu__fullheart {
+    right: 0px;
+  }
+}
+@media (min-width: 768px) {
   .menu__emptyheart, .menu__fullheart {
     right: -50px;
   }

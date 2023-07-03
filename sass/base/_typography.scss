@@ -75,11 +75,17 @@ a {
         font-weight: 500;
         font-size: 1.125rem;
         color: #000000;
+        @media (min-width: 320px ) and (max-width: 360px) {
+            font-size: 0.980rem;
+        }
     }
     &__dishsubtitle {
         font-weight: 300;
         font-size: 0.9375rem;
         color: #000000;
+        @media (min-width: 320px ) and (max-width: 360px) {
+            font-size: 0.815rem;
+        }
     }
     &__price {
         font-weight: 700;
