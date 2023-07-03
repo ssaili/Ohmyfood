@@ -382,9 +382,9 @@ a {
   margin-top: 25px;
   gap: 25px;
 }
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 340px) {
   .steps__card {
-    width: 300px;
+    width: 290px;
   }
 }
 @media (min-width: 768px) and (max-width: 880px) {
@@ -599,9 +599,9 @@ a {
   right: 30px;
   font-size: x-large;
 }
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 360px) {
   .menu__emptyheart, .menu__fullheart {
-    right: 0px;
+    right: 0;
   }
 }
 @media (min-width: 768px) {

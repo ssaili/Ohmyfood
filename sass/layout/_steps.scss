@@ -24,8 +24,8 @@
         border-radius: 20px;
         margin-top: 25px;
         gap: 25px;
-        @media (min-width: 320px) {
-            width: 300px;
+        @media (min-width: 320px) and (max-width: 340px) {
+            width: 290px;
         }
         @media (min-width: 768px ) and (max-width: 880px) {
             gap: 6px;
