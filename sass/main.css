@@ -573,6 +573,11 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (min-width: 768px) {
+  .menu__picture {
+    height: 300px;
+  }
+}
 @media (min-width: 1024px) {
   .menu__picture {
     height: 375px;
