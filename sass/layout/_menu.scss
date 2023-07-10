@@ -1,29 +1,31 @@
 .menu {
     background-color: #FFFFFF;
     &__cardsection {
-        max-width: 1024px;
         background-color: #F7F7F7;
         @media (min-width: 1024px) {
             margin-inline: auto;
+            max-width: 74%;
         }
     }
     &__card {
         width: 100%;
-        max-width: 1024px;
         border-radius: 40px 40px 0px 0px;
         padding-top: 35px;
         padding-inline: 10px;
         position: relative;
         bottom: 50px;
         background-color: #F7F7F7;
-        @media (min-width: 1024px) {
-            margin-inline: auto;
-        }
     }
     &__picture {
         width: 100%;
         height: 275px;
         object-fit: cover;
+        @media (min-width: 1024px) {
+            height: 375px;
+        }
+        @media (min-width: 1440px) {
+            height: 475px;
+        }
     }
     &__section1 {
         @include align-center;
