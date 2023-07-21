@@ -1,10 +1,12 @@
 .header {
     padding: 15px 0px;
     @include justify-center;
+
     &__logo {
         width: 162px;
         height: 44px;
     }
+
     &__arrow {
         position: absolute;
         left: 23px;

@@ -3,19 +3,23 @@
     @include justify-center;
     flex-direction: column;
     padding: 50px 20px;
-    background-color:#FFFFFF;
+    background-color: #FFFFFF;
+
     @media (min-width: 1024px) {
         margin-inline: auto;
     }
+
     &__cards {
         display: flex;
         flex-direction: column;
         align-items: center;
+
         @media (min-width: 768px) {
             flex-direction: row;
             gap: 25px;
         }
     }
+
     &__card {
         @include align-center;
         width: 322.49px;
@@ -25,13 +29,16 @@
         border-radius: 20px;
         margin-top: 25px;
         gap: 25px;
+
         @media (min-width: 320px) and (max-width: 340px) {
             width: 290px;
         }
-        @media (min-width: 768px ) and (max-width: 880px) {
+
+        @media (min-width: 768px) and (max-width: 880px) {
             gap: 6px;
         }
     }
+
     &__circle {
         width: 24px;
         height: 24px;

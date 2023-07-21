@@ -1,81 +1,120 @@
 /* menu animation */
 .menu {
-    &__favorite input[type="checkbox"]:checked ~ &__fullheart {
+    &__favorite input[type="checkbox"]:checked~&__fullheart {
         transition: opacity 1s;
     }
-    &__favorite input[type="checkbox"]:checked ~ &__emptyheart {
+
+    &__favorite input[type="checkbox"]:checked~&__emptyheart {
         transition: opacity .8s;
     }
+
     &__section2 {
         @include dish-lag;
     }
+
     &__section3 {
         @include dish-lag;
         animation-delay: 0.5s;
     }
+
     &__section4 {
         @include dish-lag;
         animation-delay: 1s;
     }
-    &__linksection1, &__linksection2 {
+
+    &__linksection1,
+    &__linksection2 {
         transition: 0.4s;
     }
-    &__link input[type="checkbox"]:checked ~ &__linksection1 {
+
+    &__link input[type="checkbox"]:checked~&__linksection1 {
         margin-right: 0;
     }
-    &__link input[type="checkbox"]:checked ~ &__linksection2 {
+
+    &__link input[type="checkbox"]:checked~&__linksection2 {
         transform: translateX(0);
     }
 }
+
 @keyframes lag {
-    0% { transform: translateX(-200%);}
-    100% { transform: translateX(0px);}
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
 }
+
 /* restaurants animation */
 .restaurants {
-    &__favorite input[type="checkbox"]:checked ~ &__fullheart {
+    &__favorite input[type="checkbox"]:checked~&__fullheart {
         transition: opacity 1s;
     }
-    &__favorite input[type="checkbox"]:checked ~ &__emptyheart {
+
+    &__favorite input[type="checkbox"]:checked~&__emptyheart {
         transition: opacity .8s;
     }
 }
+
 /* container animation */
 .container {
-    animation: containerdisplay 1.5s ;
+    animation: containerdisplay 1.5s;
 }
+
 @keyframes containerdisplay {
-    0% { opacity: 0; }
-    99% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    99% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
+
 /* loader animation */
 .loader {
-    animation: loaderdisplay 1.5s ;
+    animation: loaderdisplay 1.5s;
 }
+
 @keyframes loaderdisplay {
-    0% { opacity: 1; }
-    80% { opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
+
 /* loader bar animation */
 .loader__bar {
     animation: beat 1.5s infinite;
 }
+
 @for $i from 1 through 10 {
     .loader__bar:nth-child(#{$i}) {
-      background-color: mix($primary-color, $secondary-color, $i*10%);
-      animation-delay: $i*0.1s;
+        background-color: mix($primary-color, $secondary-color, $i*10%);
+        animation-delay: $i*0.1s;
     }
-  }
+}
+
 @keyframes beat {
     0% {
-      transform: scale(1);
-      opacity: 1;
+        transform: scale(1);
+        opacity: 1;
     }
-  
+
     50% {
-      transform: scale(0.25);
-      opacity: 0;
+        transform: scale(0.25);
+        opacity: 0;
     }
-  }
+}
