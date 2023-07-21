@@ -1,5 +1,3 @@
-<p align="center"><img src="https://raw.githubusercontent.com/ssaili/Ohmyfood/7638ff70fd9e5b3a2f5a9747d94fa6f2e9887bf3/images/logo/ohmyfood%402x.svg" alt="project-image"></p>
-
 <h1 id="title">Ohmyfood project</h1>
 <p id="description">Create a mobile first website with CSS animations</p>
 
